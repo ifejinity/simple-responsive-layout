@@ -1,0 +1,53 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+}
+header{
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+}
+ul{
+    list-style-type: none;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+li{
+    margin: 15px;
+}
+.content{
+    text-align: justify;
+}
+.content p, h1{
+    margin:20px;
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+footer{
+    background-color: gray;
+    color: white;
+    align-items: center;
+}
+footer h6{
+    padding: 20px;
+    text-align: center;
+}
+@media screen and (max-width:991px) {
+    .flex-container{
+        transition: 0.5s;
+        flex-direction: column;
+    }
+    ul{
+        transition: 0.5s;
+        flex-direction: row;
+    }
+}
